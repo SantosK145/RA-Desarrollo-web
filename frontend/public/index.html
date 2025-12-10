@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Top Videojuegos — Cards</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script defer src="./js/script.js"></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="brand">Zona de Videojuegos</h1>
+            <p class="subtitle">Tarjetas de Videojuegos</p>
+        </div>
+    </header>
+
+    <main class="container main-grid">
+        <section class="cards-grid" aria-label="Lista de videojuegos">
+
+            <article class="card" data-title="Ghost of Tsushima"
+                data-desc="Una épica aventura samurái donde Jin Sakai lucha entre el honor y la supervivencia mientras defiende Tsushima de la invasión mongola. Destaca por su impresionante arte visual, combates fluidos y un mundo inspirado en el Japón feudal."
+                tabindex="0">
+                <div class="card-media">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.LkXipPmSQq5F_n0oDxWBcwHaEK?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3"
+                        alt="Ghost of Tsushima - captura" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Ghost of Tsushima</h3>
+                    <p class="card-meta">Aventura samurái donde Jin Sakai defiende Tsushima de la invasión mongola.</p>
+                    <div class="card-actions">
+                        <button class="btn btn-primary" data-action="ver" type="button">Ver detalles</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card" data-title="Red Dead Redemption 2"
+                data-desc="Un western de mundo abierto que sigue la historia de Arthur Morgan y la banda de Van der Linde. Con una narrativa profunda, paisajes detallados y personajes memorables, es considerado una obra maestra del realismo y la inmersión.">
+                <div class="card-media">
+                    <img src="https://th.bing.com/th?id=OIF.3u%2FJjhMQmhiB8L7PGzKYqQ&cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3"
+                        alt="Red Dead Redemption 2 - captura" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Red Dead Redemption 2</h3>
+                    <p class="card-meta">Western épico que sigue la historia de Arthur Morgan en un mundo abierto
+                        realista.</p>
+                    <div class="card-actions">
+                        <button class="btn btn-primary" data-action="ver" type="button">Ver detalles</button>
+
+                    </div>
+                </div>
+            </article>
+
+            <article class="card" data-title="Persona 5 Royal"
+                data-desc="Un JRPG estilizado donde un grupo de estudiantes se convierte en los Ladrones Fantasma, enfrentando la corrupción del corazón humano. Combina vida escolar, exploración de palacios y un sistema de combate táctico lleno de estilo.">
+                <div class="card-media">
+                    <img src="https://th.bing.com/th/id/R.a25aeb2e937536a502050ad19633ea41?rik=AUWS1MCuVm2uzg&pid=ImgRaw&r=0"
+                        alt="Persona 5 Royal - captura" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Persona 5 Royal</h3>
+                    <p class="card-meta">JRPG estilizado donde los Ladrones Fantasma buscan cambiar corazones corruptos.
+                    </p>
+                    <div class="card-actions">
+                        <button class="btn btn-primary" data-action="ver" type="button">Ver detalles</button>
+
+                    </div>
+                </div>
+            </article>
+
+            <article class="card" data-title="Zelda Tears of the Kingdom"
+                data-desc="Secuela de Breath of the Wild que expande Hyrule con nuevas islas celestiales, poderes creativos y libertad total para explorar y construir. Un juego que reinventa la aventura con ingenio y un vasto mundo dinámico.">
+                <div class="card-media">
+                    <img src="https://zeldacentral.com/wp-content/uploads/2025/03/Tears-of-the-Kingdom-wallpaper.jpg"
+                        alt="Zelda Tears of the Kingdom - captura" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Zelda Tears of the Kingdom</h3>
+                    <p class="card-meta">Aventura de mundo abierto con nuevas islas celestes y poderes creativos para
+                        explorar.</p>
+                    <div class="card-actions">
+                        <button class="btn btn-primary" data-action="ver" type="button">Ver detalles</button>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <!-- Modal sencillo para detalles -->
+    <div id="modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal-panel">
+            <button class="modal-close" aria-label="Cerrar">×</button>
+            <h2 id="modal-title">Título</h2>
+            <p id="modal-desc">Descripción</p>
+            <div class="modal-actions">
+                <button class="btn" id="modal-close-2">Cerrar</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <small>Diseño — Game Gallery · Proyecto de ejemplo</small>
+        </div>
+    </footer>
+
+</body>
+
+</html>

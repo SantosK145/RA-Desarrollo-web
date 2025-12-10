@@ -1,0 +1,5 @@
+Como construir el programa
+    - docker compose up --build -d
+
+Como iniciar el programa 
+    - docker compose up -d
