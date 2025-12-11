@@ -8,13 +8,12 @@ const port = process.env.PORT || 3000;
 app.use(express.json());
 app.use(cors());
 
-// Servir la carpeta public del frontend
-app.use(express.static(path.join(__dirname, '../frontend/public')));
+app.use(express.static(path.join(__dirname)));
 
-// Ruta principal
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../frontend/public', 'index.html'));
+    res.sendFile(path.join(__dirname, 'index.html'));
 });
+
 
 app.listen(port, '0.0.0.0', () => {
     console.log(`App escuchando en http://localhost:${port}`);

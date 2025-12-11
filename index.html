@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Catálogo — Videojuegos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="wrap">
+            <h1>Tarjetas de Videojuegos</h1>
+            <p class="subtitle">Mejores videojuegos</p>
+        </div>
+    </header>
+
+    <main class="wrap grid">
+
+        <article class="card">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.LkXipPmSQq5F_n0oDxWBcwHaEK?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Juego 1">
+            <div class="card-body">
+                <h2>Ghost of Tsushima</h2>
+                <p class="meta">Acción · Aventura</p>
+                <p class="desc">Una épica aventura samurái donde Jin Sakai lucha entre el honor y la supervivencia
+                    mientras defiende Tsushima de la invasión mongola. Destaca por su impresionante arte visual,
+                    combates fluidos y un mundo inspirado en el Japón feudal.
+                </p>
+                <div class="card-actions">
+                    <button class="toggle-btn btn">Ver más</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="https://th.bing.com/th?id=OIF.3u%2FJjhMQmhiB8L7PGzKYqQ&cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Juego 2">
+            <div class="card-body">
+                <h2>Red Dead Redemption 2</h2>
+                <p class="meta">Acción · Aventura</p>
+                <p class="desc">Un western de mundo abierto que sigue la historia de Arthur Morgan y la banda de Van der
+                    Linde. Con una narrativa profunda, paisajes detallados y personajes memorables, es considerado una
+                    obra maestra del realismo y la inmersión.</p>
+                <div class="card-actions">
+                    <button class="toggle-btn btn">Ver más</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="https://th.bing.com/th/id/R.a25aeb2e937536a502050ad19633ea41?rik=AUWS1MCuVm2uzg&pid=ImgRaw&r=0"
+                alt="Juego 3">
+            <div class="card-body">
+                <h2>Persona 5 Royal</h2>
+                <p class="meta">RPG · Aventura</p>
+                <p class="desc">Un JRPG estilizado donde un grupo de estudiantes se convierte en los Ladrones Fantasma,
+                    enfrentando la corrupción del corazón humano. Combina vida escolar, exploración de palacios y un
+                    sistema de combate táctico lleno de estilo.</p>
+                <div class="card-actions">
+                    <button class="toggle-btn btn">Ver más</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="https://zeldacentral.com/wp-content/uploads/2025/03/Tears-of-the-Kingdom-wallpaper.jpg"
+                alt="Juego 4">
+            <div class="card-body">
+                <h2>Zelda Tears of the Kingdom</h2>
+                <p class="meta">Acción · Aventura</p>
+                <p class="desc">Secuela de Breath of the Wild que expande Hyrule con nuevas islas celestiales, poderes
+                    creativos y libertad total para explorar y construir. Un juego que reinventa la aventura con ingenio
+                    y un vasto mundo dinámico.</p>
+                <div class="card-actions">
+                    <button class="toggle-btn btn">Ver más</button>
+                </div>
+            </div>
+        </article>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                document.querySelectorAll('.toggle-btn').forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        const card = btn.closest('.card');
+                        const desc = card.querySelector('.desc');
+                        const expanded = card.classList.toggle('expanded');
+                        desc.style.webkitLineClamp = expanded ? 'unset' : '3';
+                        desc.style.overflow = expanded ? 'visible' : 'hidden';
+                        btn.textContent = expanded ? 'Mostrar menos' : 'Ver más';
+                    });
+                });
+            });
+        </script>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <small>© 2025 — Catálogo de videojuegos</small>
+        </div>
+    </footer>
+</body>
+
+</html>
