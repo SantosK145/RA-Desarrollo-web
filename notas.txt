@@ -3,3 +3,5 @@ Como construir el programa
 
 Como iniciar el programa 
     - docker compose up -d
+
+El registro se subio a Github
