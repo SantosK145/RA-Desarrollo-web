@@ -9,18 +9,20 @@ async function createTable() {
     await client.connect();
 
     const query = `
-    INSERT INTO juegos (id, nombre, descripcion)
+    INSERT INTO juegos (id, nombre, descripcion, imagen_url)
 VALUES
-(1, 'Zelda Tears of the Kingdom',
- 'Secuela de Breath of the Wild que expande Hyrule con nuevas islas celestiales, poderes creativos y libertad total para explorar y construir. Un juego que reinventa la aventura con ingenio y un vasto mundo dinámico.'),
+(3, 'Pokemon Legendas ZA',
+ 'Pokémon Legends: ZA es un juego de rol de acción de mundo abierto lanzado en 2025, ambientado en Lumiose City (Kalos), donde investigas el proyecto Plan Z relacionado con Zygarde mientras exploras y participas en combates en tiempo real.',
+ 'https://cdn.oneesports.gg/cdn-data/2024/02/pokemon_legends_za_reveal.jpg'),
 
-(2, 'Persona 5 Royal',
- 'Un JRPG estilizado donde un grupo de estudiantes se convierte en los Ladrones Fantasma, enfrentando la corrupción del corazón humano. Combina vida escolar, exploración de palacios y un sistema de combate táctico lleno de estilo.');
+(4, 'Ghost of Yotei',
+ 'Ghost of Yotei es un juego de aventuras en un mundo abierto, donde juegas como un espíritu que explora una isla inspirada en el folclore japonés, resolviendo puzzles y enfrentando criaturas fantasmales.',
+ 'https://tse3.mm.bing.net/th/id/OIP.pmmoBcgmrkV3VMevIkXUVgHaHa?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3');
 
   `;
 
     await client.query(query);
-    console.log("Tabla creada correctamente");
+    console.log("Datos agregados correctamente");
     await client.end();
 }
 

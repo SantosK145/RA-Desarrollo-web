@@ -14,7 +14,9 @@
         <div class="wrap">
             <h1>Segunda pagina de juegos</h1>
             <p class="subtitle">Mejores videojuegos</p>
-            <a href="index.html" class="btn">Regresar</a>
+            <div class="card-actions">
+                <a href="index.html" class="btn">Regresar</a>
+            </div>
         </div>
     </header>
 
@@ -62,7 +64,7 @@
                 juegos.forEach(j => {
                     grid.innerHTML += `
             <article class="card">
-                <img src="https://placehold.co/600x400?text=${j.nombre}" alt="${j.nombre}">
+                <img src="${j.imagen_url}" alt="${j.nombre}">
                 <div class="card-body">
                     <h2>${j.nombre}</h2>
                     <p class="meta">Videojuego</p>
