@@ -4,6 +4,7 @@ const cors = require('cors');
 const path = require('path');
 const port = process.env.PORT || 3000;
 const { Client } = require('pg');
+require("dotenv").config();
 
 // Middlewares
 app.use(express.json());
@@ -11,7 +12,7 @@ app.use(cors());
 
 // Conexión a Render PostgreSQL
 const client = new Client({
-    connectionString: process.env.DATABASE_URL,
+    connectionString: process.env.DATABASELINK,
     ssl: { rejectUnauthorized: false }
 });
 

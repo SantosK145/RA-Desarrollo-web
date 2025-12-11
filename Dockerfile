@@ -13,7 +13,7 @@ RUN npm install --production
 # 5. Copiar el resto del proyecto
 COPY . .
 
-# 6. Exponer el puerto (cámbialo si tu server.js usa otro)
+# 6. Exponer el puerto
 EXPOSE 3000
 
 # 7. Comando de arranque
