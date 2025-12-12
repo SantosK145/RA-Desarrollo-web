@@ -25,9 +25,10 @@ npm test
     docker run -p 3000:3000 ra-docker
 
 # Construccion y ejecución con Docker Compose
+## Construir imagen
     docker compose up --build -d
 
-Como iniciar el programa mediante Docker
+## Como iniciar el programa mediante Docker
     docker compose up -d
 
 # Detener contenedores
