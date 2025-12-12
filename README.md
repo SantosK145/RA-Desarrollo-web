@@ -14,14 +14,14 @@ Antes de ejecutar el proyecto asegúrate de tener instalado:
 - npm i dotenv
 - npm i pg
 
-Las pruebas unitarias se llevan a cabo mediante el siguiente comando:
+## Las pruebas unitarias se llevan a cabo mediante el siguiente comando:
 npm test
 
 # Construccion y ejecución con Docker
-Construir la imagen
+## Construir la imagen
     docker build -t ra-docker .
 
-Ejecutar la imagen
+## Ejecutar la imagen
     docker run -p 3000:3000 ra-docker
 
 # Construccion y ejecución con Docker Compose
@@ -31,5 +31,5 @@ Como iniciar el programa mediante Docker
     docker compose up -d
 
 # Detener contenedores
-docker compose down
+    docker compose down
 
