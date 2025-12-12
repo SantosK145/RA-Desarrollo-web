@@ -19,16 +19,16 @@ npm test
 
 # Construccion y ejecución con Docker
 Construir la imagen
-docker build -t ra-docker .
+    docker build -t ra-docker .
 
 Ejecutar la imagen
-docker run -p 3000:3000 ra-docker
+    docker run -p 3000:3000 ra-docker
 
 # Construccion y ejecución con Docker Compose
-    - docker compose up --build -d
+    docker compose up --build -d
 
 Como iniciar el programa mediante Docker
-    - docker compose up -d
+    docker compose up -d
 
 # Detener contenedores
 docker compose down
